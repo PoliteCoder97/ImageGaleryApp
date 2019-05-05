@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">ImageGaleryApp</string>
+  <string name="splashText">خوش آمدید</string>
+  <string name="loadingText">درحال دریافت اطلاعات</string>
+</resources>
