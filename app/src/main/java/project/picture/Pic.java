@@ -1,6 +1,8 @@
 package project.picture;
 
-public class Pic {
+import java.io.Serializable;
+
+public class Pic implements Serializable {
   private String picLink;
   public Pic() {
   }

@@ -10,8 +10,27 @@
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
 
-    <item name="android:statusBarColor" tools:ignore="NewApi">@color/blue_dark</item>
-    <!--<item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>-->
+    <item name="android:statusBarColor" tools:ignore="NewApi">@color/colorPrimary</item>
+    <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+    <item name="fontPath">font/shn.ttf</item>
+  </style>
+
+
+
+  <style name="IRANSans">
+    <item name="android:fontFamily" tools:ignore="NewApi">@font/iransans</item>
+  </style>
+  <style name="IRANSans_Bold">
+    <item name="android:fontFamily" tools:ignore="NewApi">@font/iransansans_bold</item>
+  </style>
+  <style name="IRANSans_Light">
+    <item name="android:fontFamily" tools:ignore="NewApi">@font/iransansans_light</item>
+  </style>
+  <style name="IRANSans_Medium">
+    <item name="android:fontFamily" tools:ignore="NewApi">@font/iransansans_medium</item>
+  </style>
+  <style name="IRANSans_UltraLight">
+    <item name="android:fontFamily" tools:ignore="NewApi">@font/iransansans_ultralight</item>
   </style>
 
 </resources>

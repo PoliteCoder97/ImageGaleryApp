@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:androidx.core="http://schemas.android.com/tools"
+          xmlns:tools="http://schemas.android.com/apk/res-auto"
           package="com.example.imagegaleryapp">
 
   <uses-permission android:name="android.permission.INTERNET"/>
@@ -12,7 +14,9 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="false"
     android:theme="@style/AppTheme">
-    <activity android:name="project.view.activities.SplashActivity">
+    <activity android:name="project.view.activities.ShowPictureWithZoomActivity">
+    </activity>
+    <activity android:name="project.view.activities.GalleryListActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
@@ -20,8 +24,6 @@
       </intent-filter>
     </activity>
     <activity android:name="project.view.activities.PictureListActivity">
-    </activity>
-    <activity android:name="project.view.activities.GalleryListActivity">
     </activity>
   </application>
 

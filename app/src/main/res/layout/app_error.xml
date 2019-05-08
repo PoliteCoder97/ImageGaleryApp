@@ -2,6 +2,25 @@
 <LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
+  android:layout_height="48dp"
+  android:background="@color/error">
 
+  <TextView
+    android:id="@+id/txtError"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.7"
+    android:gravity="center"
+    android:textSize="@dimen/text_medium"
+    android:textColor="@color/white"
+    android:layout_margin="@dimen/view_small"
+    android:text="Error"/>
+
+  <Button
+    android:id="@+id/btnRetry"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.3"
+    android:layout_margin="@dimen/view_small"
+    android:text="try again"/>
 </LinearLayout>

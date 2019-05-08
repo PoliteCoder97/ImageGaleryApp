@@ -1,11 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:background="@drawable/layout_background"
-  tools:context="project.view.activities.PictureListActivity">
+  android:orientation="vertical"
+  tools:context="project.view.activities.GalleryListActivity">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
 
-</LinearLayout>
+    <include
+      android:id="@+id/app_toolbar"
+      layout="@layout/app_toolbar"
+      />
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+      android:id="@+id/rclvPics"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+  </LinearLayout>
+  <include
+    android:id="@+id/app_lay_loading"
+    layout="@layout/app_lay_loading"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone"
+    />
+  <include
+    android:id="@+id/app_error"
+    layout="@layout/app_error"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone"
+    />
+</RelativeLayout>

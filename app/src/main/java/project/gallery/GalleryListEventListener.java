@@ -1,10 +1,11 @@
 package project.gallery;
 
+import java.io.Serializable;
 import java.util.List;
 
 import project.picture.Pic;
 
-public class GalleryListEventListener {
+public class GalleryListEventListener implements Serializable {
   private int id;
   private String title;
   private String thumbPic;

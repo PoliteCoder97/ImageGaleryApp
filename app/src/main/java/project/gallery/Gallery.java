@@ -1,11 +1,12 @@
 package project.gallery;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import project.picture.Pic;
 
-public class Gallery {
+public class Gallery implements Serializable {
   private int id;
   private String title;
   private String thumbPic;
