@@ -15,7 +15,7 @@
     android:largeHeap="true"
     android:usesCleartextTraffic="true"
     android:theme="@style/AppTheme"
-    tools:targetApi="m">
+    >
     <activity android:name="project.view.activities.ShowPictureWithZoomActivity">
     </activity>
     <activity android:name="project.view.activities.GalleryListActivity">
