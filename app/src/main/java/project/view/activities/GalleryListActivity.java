@@ -31,6 +31,7 @@ import project.classes.Consts;
 import project.gallery.Gallery;
 import project.gallery.GalleryListAdapter;
 import project.picture.Pic;
+import project.utils.Utils;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class GalleryListActivity extends AppCompatActivity {
@@ -114,7 +115,7 @@ public class GalleryListActivity extends AppCompatActivity {
     waiting = true;
 
     Ion.with(GalleryListActivity.this)
-      .load(Consts.GET_GALLERY_URI)//get the image of galleries
+      .load(Utils.checkSdkVersionAndSetBAseUri(Consts.GET_GALLERY_URI))//get the image of galleries
       .asString()
       .setCallback(new FutureCallback<String>() {
         @Override
